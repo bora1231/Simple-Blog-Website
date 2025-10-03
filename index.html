@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Blog</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        /* This ensures cards fill height and images are consistent */
+        .blog-card {
+            height: 100%;
+        }
+        .card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blog App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Topics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4 text-primary">Latest Posts</h1>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card shadow-sm blog-card">
+                    <img src="https://picsum.photos/600/200?random=1" class="card-img-top card-img" alt="Post 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Mastering CSS Grid</h5>
+                        <p class="card-text">Dive deep into the modern CSS layout systems that make responsive design simple.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm blog-card">
+                    <img src="https://picsum.photos/600/200?random=2" class="card-img-top card-img" alt="Post 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Async JS with Fetch</h5>
+                        <p class="card-text">Explore the evolution of JavaScript promises, async/await, and network operations.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card shadow-sm blog-card">
+                    <img src="https://picsum.photos/600/200?random=3" class="card-img-top card-img" alt="Post 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Bootstrap Relevance</h5>
+                        <p class="card-text">Learn why Bootstrap remains a top choice for developers needing fast prototyping and reliable components.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card shadow-sm blog-card">
+                    <img src="https://picsum.photos/600/200?random=4" class="card-img-top card-img" alt="Post 4 Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">VS Code Extensions</h5>
+                        <p class="card-text">Optimize your coding workflow with the essential extensions every front-end developer should be using.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Blog App. All rights reserved.</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-white mx-2 text-decoration-none">FB</a>
+                <a href="#" class="text-white mx-2 text-decoration-none">TW</a>
+                <a href="#" class="text-white mx-2 text-decoration-none">LI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLnnRO4yWJmY0dK7uJc1J6TqL80gH6A4xX+Y4rX7e0FqC00EwS6C0J" crossorigin="anonymous"></script>
+</body>
+</html>
 
